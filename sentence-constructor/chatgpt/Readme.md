@@ -4,7 +4,7 @@
 
 GPT 3.5
 
-> THis model will not give us the result we require, we need a paid version fot this
+> This model will not give us the result we require, we need a paid version fot this
 
 ## Prompting Guides
 
