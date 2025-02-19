@@ -2,9 +2,9 @@
 
 ### Which Model
 
-GPT 4o
+GPT 3.5
 
-> I have the paid version of ChatGPT.  GPT4o is fast enough, I don't want to use the o1 reasoning models because they have limit use per day.
+> THis model will not give us the result we require, we need a paid version fot this
 
 ## Prompting Guides
 
