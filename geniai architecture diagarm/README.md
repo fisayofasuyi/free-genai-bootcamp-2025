@@ -1,7 +1,7 @@
-1. System Architecture Diagram
+## System Architecture Diagram
 (Refer to the attached compact architecture diagram)
 
-2. Requirements
+## Requirements
 Functional Requirements:
 Learning Portal: Web-based and mobile-friendly portal for students to access lessons, exercises, and AI-powered features.
 AI Services:
@@ -21,7 +21,7 @@ Security: User authentication, data encryption, and compliance with data privacy
 Performance: Low-latency responses for real-time interactions.
 Cross-Platform Compatibility: Accessible via web and mobile devices.
 
-3. Risks
+## Risks
 Data Privacy Risks: Sensitive user data exposure if security measures are insufficient.
 Model Accuracy Risks: AI models may produce incorrect grammar corrections or misinterpret speech input.
 Integration Challenges: AI services and learning portal may have compatibility issues.
@@ -29,7 +29,7 @@ Scalability Risks: High traffic could impact system performance if not optimized
 User Adoption Risks: Students may struggle with AI-based interactions compared to human instructors.
 Content Moderation Risks: AI-based moderation may incorrectly flag or allow inappropriate content.
 
-4. Assumptions
+## Assumptions
 Users have stable internet access for real-time AI interactions.
 AI models can be fine-tuned periodically to improve accuracy.
 The existing Learning Portal supports API-based integrations.
@@ -37,7 +37,7 @@ The platform will support multiple languages in the future.
 Users are comfortable interacting with AI-driven learning tools.
 Translator service will have reliable language models for accurate translations.
 
-5. Constraints
+## Constraints
 Budget Constraints: Limited resources for AI model training and cloud infrastructure.
 Technology Stack Limitations: Must align with the existing Learning Portal and database.
 Compliance Requirements: Must adhere to GDPR, CCPA, and other data protection regulations.
