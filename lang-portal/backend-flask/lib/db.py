@@ -40,24 +40,30 @@ class Db:
     # Create the necessary tables
     cursor.execute(self.sql('setup/create_table_words.sql'))
     self.get().commit()
+   
 
     cursor.execute(self.sql('setup/create_table_word_reviews.sql'))
     self.get().commit()
+    
 
     cursor.execute(self.sql('setup/create_table_word_review_items.sql'))
     self.get().commit()
+    
 
     cursor.execute(self.sql('setup/create_table_groups.sql'))
     self.get().commit()
 
     cursor.execute(self.sql('setup/create_table_word_groups.sql'))
     self.get().commit()
+   
 
     cursor.execute(self.sql('setup/create_table_study_activities.sql'))
     self.get().commit()
+    
 
     cursor.execute(self.sql('setup/create_table_study_sessions.sql'))
     self.get().commit()
+    
 
   def import_study_activities_json(self,cursor,data_json_path):
     study_actvities = self.load_json(data_json_path)

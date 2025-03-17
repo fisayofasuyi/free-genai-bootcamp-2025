@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+//import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ChevronUp, ChevronDown } from 'lucide-react'
 import { fetchGroups, type Group } from '../services/api'
@@ -8,6 +9,7 @@ type SortKey = 'name' | 'word_count'
 export default function Groups() {
   const [groups, setGroups] = useState<Group[]>([])
   const [sortKey, setSortKey] = useState<SortKey>('name')
+  //const [StudySessionSortKey, setStudySessionSorttKey] = useState<SortKey>('name')
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc')
   const [currentPage, setCurrentPage] = useState(1)
   const [totalPages, setTotalPages] = useState(1)

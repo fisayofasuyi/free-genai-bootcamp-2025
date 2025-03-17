@@ -52,6 +52,20 @@ export interface StudySession {
   review_items_count: number;
 }
 
+//just added this
+export type StudySessionSortKey = 'id' | 'activity_name' | 'group_name' | 'start_time' | 'end_time' | 'review_items_count'
+
+export type WordSortKey = 'kanji' | 'romaji' | 'english' | 'correct_count' | 'wrong_count'
+
+
+export function studySessions() {
+
+}
+
+
+
+
+
 export interface WordReview {
   word_id: number;
   is_correct: boolean;
@@ -106,9 +120,9 @@ export interface GroupWordsResponse {
 
 export const fetchGroupDetails = async (
   groupId: number,
-  page: number = 1,
-  sortBy: string = 'kanji',
-  order: 'asc' | 'desc' = 'asc'
+  // page: number = 1,
+  // sortBy: string = 'kanji',
+  // order: 'asc' | 'desc' = 'asc'
 ): Promise<GroupDetails> => {
   const response = await fetch(`${API_BASE_URL}/groups/${groupId}`);
   if (!response.ok) {

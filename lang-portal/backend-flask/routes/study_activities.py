@@ -95,6 +95,8 @@ def load(app):
             'per_page': per_page,
             'total_pages': math.ceil(total_count / per_page)
         })
+    
+
 
     @app.route('/api/study-activities/<int:id>/launch', methods=['GET'])
     @cross_origin()

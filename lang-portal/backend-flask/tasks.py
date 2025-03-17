@@ -7,3 +7,5 @@ def init_db(c):
   app = Flask(__name__)
   db.init(app)
   print("Database initialized successfully.")
+
+

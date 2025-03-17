@@ -1,4 +1,4 @@
-from flask import Flask, g
+from flask import Flask, g, request, jsonify
 from flask_cors import CORS
 
 from lib.db import Db
@@ -68,7 +68,7 @@ def create_app(test_config=None):
     routes.study_sessions.load(app)
     routes.dashboard.load(app)
     routes.study_activities.load(app)
-    
+
     return app
 
 app = create_app()

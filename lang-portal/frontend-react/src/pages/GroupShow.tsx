@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+//import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { 
   fetchGroupDetails, 
@@ -6,7 +7,7 @@ import {
   fetchGroupWords,
   type GroupDetails, 
   type StudySession,
-  type StudySessionSortKey,
+  type StudySessionSortKey,//studySessions,
   type Word 
 } from '../services/api'
 import WordsTable, { type WordSortKey } from '../components/WordsTable'
@@ -22,7 +23,7 @@ export default function GroupShow() {
   const [studySessions, setStudySessions] = useState<StudySession[]>([])
   const [wordSortKey, setWordSortKey] = useState<WordSortKey>('kanji')
   const [wordSortDirection, setWordSortDirection] = useState<'asc' | 'desc'>('asc')
-  const [sessionSortKey, setSessionSortKey] = useState<StudySessionSortKey>('startTime')
+  const [sessionSortKey, setSessionSortKey] = useState<StudySessionSortKey>('start_time')
   const [sessionSortDirection, setSessionSortDirection] = useState<'asc' | 'desc'>('desc')
   const [wordsPage, setWordsPage] = useState(1)
   const [sessionsPage, setSessionsPage] = useState(1)
